@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This is an interview challenge"""
 
+
 def canUnlockAll(boxes=[]):
     """canUnlockAll"""
     keys = {0}
