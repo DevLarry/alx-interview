@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Operations"""
 
+
 def minOperations(n):
     """All is well"""
     if (n < 2):
@@ -18,10 +19,3 @@ def minOperations(n):
         # increment root until it evenly-divides n
         root += 1
     return ops
-
-if __name__ == "__main__":
-    n = 4
-    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
-    n = 9
-    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
