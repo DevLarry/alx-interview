@@ -42,11 +42,12 @@ const getCharNames = async () => {
   await requestNames();
 
   for (const n of names) {
-    if (n === names[names.length - 1]) {
-      process.stdout.write(n);
-    } else {
-      process.stdout.write(n + '\n');
-    }
+    // if (n === names[names.length - 1]) {
+    //   process.stdout.write(n);
+    // } else {
+    //   process.stdout.write(n + '\n');
+    // }
+    console.log(n)
   }
 };
 
