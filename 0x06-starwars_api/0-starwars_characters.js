@@ -47,7 +47,7 @@ const getCharNames = async () => {
     // } else {
     //   process.stdout.write(n + '\n');
     // }
-    console.log(n)
+    console.log(n);
   }
 };
 
