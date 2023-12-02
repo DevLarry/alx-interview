@@ -5,6 +5,10 @@
 def findsingleperimeter(grid, pos):
     """Get the relative perimeter of one square"""
     per = 0
+    if pos[0] == 0 or pos[0] == len(grid) - 1:
+        return 0
+    if pos[1] == 0 or pos[1] == len(grid[0]) - 1:
+        return 0
     if grid[pos[0]-1][pos[1]] == 0:
         per += 1
     if grid[pos[0]+1][pos[1]] == 0:
