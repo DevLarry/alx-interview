@@ -48,17 +48,19 @@ def isWinner(x, nums):
         rounds += 1
     maria = 0
     ben = 0
+    # if len(wins) == 0:
+    #     return None
     for win in wins:
         if win is True:
             maria += 1
         else:
             ben += 1
-    if ben == maria:
-        return None
+    if ben > maria:
+        return "Ben"
     elif ben < maria:
         return "Maria"
     else:
-        return "Ben"
+        return None
 
 
 if __name__ == "__main__":
