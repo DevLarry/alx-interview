@@ -30,7 +30,9 @@ def isWinner(x, nums):
     # won = False
     rounds = 0
     wins = []
-    while(rounds < x):
+    if x < 1 or len(nums) == 0:
+        return None
+    while(rounds < x and rounds < len(nums)):
         isMaria = True
         n = nums[rounds]
         nset = [i for i in range(1, n + 1)]
@@ -48,8 +50,6 @@ def isWinner(x, nums):
         rounds += 1
     maria = 0
     ben = 0
-    # if len(wins) == 0:
-    #     return None
     for win in wins:
         if win is True:
             maria += 1
